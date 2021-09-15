@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Add google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <title>Home</title>
+
+    <style>
+
+        html{
+          background:#FFFFFF; 
+          
+        }
+
+        h1, h2, h3, h4 {
+          font-family: 'Great Vibes', cursive;
+        }
+        body {
+          
+
+        
+          background-color: #7BAFD4;
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto;
+          background-color: #FFFFFF;
+          padding: 10px;
+          grid-column-gap: 0px;
+        }
+        .grid-item {
+          background-color: #FFFFFF;
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .grid-item1 {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+          grid-column: 1/ 3;
+          
+        }
+        
+        .header {
+          display: grid;
+          grid-template-columns: auto auto 1fr;
+          text-align: center;
+          font-family: 'Great Vibes', cursive;
+        }
+
+        #header-title {
+          color: #FFFFFF;
+          padding-top: 60px;
+          padding-left: 300px;
+          font-size: 50px;
+        }
+
+        #btn-donate {
+          height: 20%; 
+          width: 50%;
+        }
+
+        #navbar {
+          overflow: hidden;
+          background-color: #13294B;
+          
+        }
+        
+        #navbar a {
+          float: left;
+          display: block;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        #navbar a.active {
+          background-color: #000000;
+          color: white;
+        }
+        
+        .news-article-link a {
+          color: #13294B;
+        }
+        .content {
+        
+          grid-column: 1 / 1;
+          grid-row: 1 / 4;
+          background-color: #7BAFD4;
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+        
+        aside {
+          
+          grid-row: 1 / 4;
+          background-color: #7BAFD4;
+          border: 1px solid rgba(0, 0, 0, 0.8);
+         
+          font-size: 30px;
+          text-align: center;
+          color: #FFFFFF;
+          font-family: 'Great Vibes', cursive; 
+        }
+
+        #event-container{
+          padding: 10px;
+          font-size: 20px;
+        }
+
+
+     /* This is a single-line comment 
+          the code below may be non functioning
+
+        .event{
+          display: block;
+          border: 1px solid;
+          width: 300px;
+          background-color: #74992e;
+        }
+     */
+
+        .tutoringevent{
+          display: block;
+          margin-bottom: 10px;
+          width: 300px;
+          box-shadow: 1px 1px 1px 1px;
+          background-color: #13294B;
+          color: #7BAFD4;
+          font-family: "Lato";
+
+        }
+
+        
+        .shelterevent{
+          display: block;
+          margin-bottom: 10px;
+          width: 300px;
+          box-shadow: 1px 1px 1px 1px;
+          background-color: #13294B;
+          color: #7BAFD4;
+          font-family: "Lato";
+
+        }
+
+        .counselingevent{
+          display: block;
+          margin-bottom: 10px;
+          width: 300px;
+          box-shadow: 1px 1px 1px 1px;
+          background-color: #13294B;
+          color: #7BAFD4;
+          font-family: "Lato";
+        }
+     
+
+        .shelterevent:hover{ 
+          background-color: #383637;
+        }
+
+      
+
+        .counselingevent:hover{ 
+          background-color: #383637;
+        }
+        .tutoringevent:hover{ 
+          background-color: #383637;
+        }
+        .date{ 
+          
+        }
+
+
+        #calendar{ 
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-template-rows: auto;
+         
+        }
+        
+        #calendar-title{ 
+          border-top: px solid yellow;
+          padding-left: 10px;
+        }
+        .calendar-month-date{
+          color: #ffffff;
+          grid-column: 1 / 1; 
+        }
+
+        .calendar-events{
+          color: #ffffff;
+          grid-column: 3 / 3;
+        }
+
+        .calendar-event{ 
+          display: block;
+          float: right;
+          
+        }
+ 
+        #calendar-event1{
+          padding-bottom: 13px;
+        }
+
+        #calendar-event2{
+          padding-bottom: 23px;
+        }
+
+        .calendar-month{ 
+          display: block
+        }
+        .calendar-date{ 
+          display: block;
+        }
+
+        .news{
+          text-align: center;
+
+        }
+        #abovefooter{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-column: 1 / -1;
+          grid-row: 4/ 5;
+          background-color: #8D9092;
+          border: 1px solid #13294B;
+          padding: 20px;
+          font-size: 15;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        #calendar-section{
+          display: grid; 
+          
+          grid-template-columns: auto auto;
+          grid-template-rows: auto;
+          text-align: left;
+          
+        }
+
+        #calendar-section-heading {
+          position: relative;
+          left: 60px;
+        }
+
+        #calendar-month-date{
+          grid-column: 1 / 1;
+          text-align: left;
+          padding-right: 90px;
+         
+        }
+
+        #calendar-event{
+          grid-column: 2 / 2;
+          text-align: left;
+        }
+
+        #contact-section{
+         
+        }
+
+        #news-section{
+         
+        }
+        #news-section-heading{
+          position: relative;
+          top: 0px;
+          right: 0px;
+          
+        }
+        #follow-us-section{
+          grid-column: 2 / 2;
+          text-align: center;
+        }
+
+        .follow-us-section-icons{
+          text-align: center;
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        .sticky + .content {
+          padding-top: 60px;
+        }
+        
+        footer{
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-column: 1 / 3;
+          background: #7BAFD4;
+          grid-gap: 0px;
+          
+        }
+       
+        #footer-paragraph{
+          grid-column: 1/ 1; 
+          color: #FFFFFF;
+          width: 100%;
+        }
+
+
+        .icons{
+          height: 80%;
+          grid-column: 2/2; 
+          text-align: left;
+          width: 100%;
+          padding-right: 90px;
+        }
+
+        /* Style all font awesome icons */
+        .fa {
+          padding: 10px;
+          font-size: 15px;
+          width: 15px;
+          text-align: right;
+          text-decoration: none;
+          border-radius: 50%;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+          opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+
+        /* Facebook */
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+
+        #first-news-link{
+          font-size: 12px;
+        }
+
+        .icons-follow-us{
+          padding-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+  <div class="header">
+        
+    <img id="logo" src="images/logo.png" height="200" width="200"/>
+
+    <h1 id= "header-title">Benevolent Community Center</h1>
+
+    <input type="button" value="Donate Here" id= "btn-donate">
+   
+  </div>
+
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+  
+  <div class="grid-container">
+    <div class="content">
+        <h2>Welcome to the Benevolent Community Center Page</h2>
+        <a href="http://unsplash.com"><img src="images/main.jpg" alt ="this is the main image"/></a>
+        <p>
+          The introduction sets the stage for the sly and self-mocking humor that defines Winnie-the-Pooh. 
+          It is here that adults, reading the book to children for the first time, realize it may be as 
+          enjoyable to them as it is to the children for whom it is meant. 
+
+        </p>
+        
+      
+    </div>
+      
+    <aside>
+        <br>
+        Quick Links 
+        <br>
+        <br>
+        
+    <div id="event-container">
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="shelterevent" id="event1">FHA Informational Conference</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="counselingevent" id="event2">Local Authors Book Fair</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="tutoringevent" id="event3">ACT Preparation Courses</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="counselingevent" id="event4">Counseling Event 4</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="shelterevent" id="event5">Budgeting 101 course registration</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="tutoringevent" id="event6">After school tutors available k-12!</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="tutoringevent" id="event7">Cosmetology and Barbering Licensing-State Exam Dates</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="shelterevent" id="event8">Temporary And Emergencry Housing</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="counselingevent" id="event9">Earth Day Flower Planting</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="tutoringevent" id="event10">GAME NIGHTS 2021-2022</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="shelterevent" id="event11">Refinement & Refinance Event</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="tutoringevent" id="event12">NCLEX Study Groups</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="shelterevent" id="event13">POA Property Listings</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="tutoringevent" id="event14">2021 SCRIPPS qualifying Spelling Event</div>
+      </a>
+      <a href="http://youtube.com/watch?v" style="text-decoration: none;">
+        <div class ="counselingevent" id="event15">Gardening Party</div>
+      </a>
+    </div>
+    </aside>
+      
+    <section id="abovefooter">
+      
+      <div id= "calendar-section">
+        <div>
+        <h3 id= "calendar-section-heading">Calendar</h3>
+        <hr width= "100%">
+        </div>
+        <br>
+        <br>  
+        <div class="calendar-month-date">
+          <br>
+          Sept 
+          <br>
+          6-9
+        </div>
+
+        <div class="calendar-event">
+          <br>
+          Rosh Hashana
+
+          </div>
+        
+          <div class="calendar-month-date">
+          <br>
+          Sept 
+          <br>
+          6-9
+
+          </div>
+
+          <div class="calendar-event">
+            <br>
+            Rosh Hashana
+
+          </div>
+
+          <div class="calendar-month-date">
+            <br>
+            Sept 
+            <br>
+            6-9
+    
+            </div>
+
+            <div class="calendar-event">
+              <br>
+              Rosh Hashana
+    
+            </div>
+
+          </div>
+      
+      <div id= "contact-section">
+        <div>
+        <h3 id= "contact-section-heading">Contact Us</h3>
+        <br>
+        <hr width="65%"/>
+        </div>
+
+          <div id= "contact-section-info">
+          
+          <br>
+          <br>
+          Benevolent Community Center 
+          <br>96 Despard Street 
+          <br>Wimauma, Fl 33598  
+          <br>(404) 731-6573   
+          </div>
+        </div>
+      
+      <div id= "news-section">
+        <div>
+        <h3 id= "news-section-heading">News</h3>
+        <br>
+        <hr width="65%"/>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="news-article">BCC BASKETBALL LEAGUE</div>
+        <div class="news-article-link"><a href="http://youtube.com/watch?v">BCC singles men and women division league</a></div>
+
+        <br>
+        <div class="news-article">BCC ACT, GRE, MCAT TUTORING</div>
+        <div class="news-article-link"><a href="http://youtube.com/watch?v">BCC now has tutors to help empower you!</a></div>
+      </div>
+      
+      <div id= "follow-us-section">Follow Us
+        <hr width="300">
+        <div class="follow-us-section-icons">
+          <br>
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+    
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <p id ="footer-paragraph"> © 2021 by Benevolent Community Center * (404) 731-6573 * 
+          96 Despard Street Wimauma, Fl 33598
+          (Former Old YMCA)
+
+          Serving the local community, state, southern coast, 
+          and worldwide for over 30 years.  </p>
+      </div>
+  
+      <div class="icons">
+        <br>
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+
+      </div>
+    </footer>
+
+</div>
+  <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+  </script>
+    
+
+      
+          
+</body>
+</html>

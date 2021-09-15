@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Space</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          background-color: #2196F3;
+          padding: 10px;
+          grid-column-gap: 0px;
+        }
+        .grid-item {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .grid-item1 {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+          grid-column: 1/ 3;
+          
+        }
+        
+        .header {
+            text-align: center;
+        }
+
+
+        #navbar {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        #navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        #navbar a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        .content {
+          grid-column: 1 / 2;
+          grid-row: 1 / 4;
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+        
+        .aside {
+          grid-column: 2 / 4;
+          grid-row: 1 / 4;
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .abovefooter{
+          grid-column: 1/ 4;
+          grid-row: 4/ 5;
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .whatshappening{
+          display: grid;
+          grid-template-columns: auto auto auto;
+        }
+
+
+        #contact {
+          grid-column: 2 / 3;
+          grid-row: 1 / 3;
+        }
+        #social {
+          grid-column: 2 / 3;
+          grid-row: 2 / 4;
+        }
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        .sticky + .content {
+          padding-top: 60px;
+        }
+
+        
+        </style>
+
+</head>
+<body>
+    <div class="header">
+        <h2>Benevolent Community Center</h2>
+        <p>################################</p>
+      </div>
+
+      <div id="navbar">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">About</a>
+        <a href="javascript:void(0)">Donate</a>
+        <a href="javascript:void(0)">Contact</a>
+        <a href="javascript:void(0)">Contact</a>
+      </div>
+
+    <div class="grid-container">
+      <div class="content">
+          <h3>Welcome to the Benevolent Community Center Page</h3>
+          <img src="/images/main.jpg" alt ="this is the main image"/>
+          <p>Some text to enable scrolling.. </p>
+          p>The navbar will stick to the top when you reach its scroll position.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          
+          
+          
+        
+      </div>
+      <div class="aside">2
+          <aside>THIS IS AN ASIDE</aside>
+      </div>
+      <div class="abovefooter">
+        <div class="whatshappening">
+          <div id="calendar">Calendar
+            <hr width = "50%">
+            <p> sept 1</p>
+            <p> sept 2</p>
+            <p> sept 3</p>
+            <p> sept 4</p>
+          </div>
+          <div id ="contact">Contacts
+            <hr width = "50%">
+            <p> 9930 South Santa Monica Blvd. 
+              <br>Beverly Hills, Ca 90212
+              <br>Tel: (310) 772-0000  
+              <br>​contact@jemcenter.com</p>
+              <br>
+              
+            
+          </div>
+          
+          <div id ="news">News
+            <hr width = "50%">
+            <p> sept 1</p>
+            <p> sept 2</p>
+            <p> sept 3</p>
+            <p> sept 4</p> 
+          </div>
+          <div id ="social">
+            <hr width = "50%">Follow Us
+            <hr width = "50%">
+            <p> sept 1</p>
+            <p> sept 2</p>
+            <p> sept 3</p>
+            <p> sept 4</p> 
+          </div>
+
+        </div>
+          
+      </div>  
+      
+       
+    </div>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+    
+</body>
+</html>

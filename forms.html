@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        .form-group {
+            background-color: rgb(153, 22, 146) ; 
+            margin-bottom: 10px; 
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+      
+        input[type="text"],
+        input[type="password"],
+        input[type="email"]{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(95, 7, 55)
+        }
+
+        .button {
+            cursor: pointer; 
+            background-color: gold; 
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        form {
+            border: 3px double rgb(51, 4, 4);
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 300px;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(95, 7, 55)
+        }
+
+        select{
+            max-width: 500px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(95, 7, 55)
+        }
+    </style>
+</head>
+<body>
+    
+
+   <!--
+    
+    form
+
+
+    input 
+        text
+        password
+        radio
+        checkbox
+        email
+
+    
+    select 
+    option 
+
+    textarea
+   
+    button 
+
+-->
+
+    
+<form id="signin" action=>
+    
+
+
+    <div class="form-group">
+        <input type ="hidden" value= "This is cool!!!!" />
+    </div>
+
+
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input id= "username" type="text" placeholder="Enter username"/>
+    </div>
+
+    <div class="form-group">
+    <label for="email">Email</label> Address:</label>
+    <input id="email" type="email" placeholder="Enter email"/> 
+    </div>
+
+
+    <div class="form-group">
+    <label for="password">Password:</labelPasswords:</label>   
+    <input id="password" type="password" placeholder="Enter password"/>
+
+    </div>
+
+    <div class="form-group">
+        <input type ="submit" value= "Login!!!!" />
+        <button type= "submit"> Login</button>
+    </div>
+</form>
+
+
+
+
+<div class="form-group">
+    <p> What type of cars do you like? </p>
+    <label>Ford
+        <input type ="checkbox" name="cars" value= "ford" />
+    </label>
+
+    <label>Honda
+        <input type ="checkbox" name="cars" value= "honda" />
+    </label>
+    
+    <label>unknown
+        <input type ="checkbox" name="cars" value= "unknown" />
+    </label>
+</div>
+
+<div class="form-group">
+    <label for= "fruit">Bananas
+        <input type ="radio" name="fruit" value= "male" />
+    </label>
+
+    <label for= "fruit">Apple
+        <input type ="radio" name="fruit" value= "female" />
+    </label>
+    
+    <label for= "fruit">Mango
+        <input type ="radio" name="fruit" value= "unknown" />
+    </label>
+</div>
+
+
+<div class="form-group">
+    <label>Male
+        <input type ="radio" name="gender" value= "male" />
+    </label>
+
+    <label>Female
+        <input type ="radio" name="gender" value= "female" />
+    </label>
+    
+    <label>unknown
+        <input type ="radio" name="gender" value= "unknown" />
+    </label>
+</div>
+
+<div class="form-group">
+    <label for="phone_type">What type of phone do you own?:</label>
+    <select id="phone_type" name="phone_type">
+        <option value="">Select One</option>
+        <option value="iPhone">Select Two</option>iPhone</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Blackberry">Blackberry</option>
+        <option value="Nokia">Nokia</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label>Statement of Purpose</label>
+    <textarea id=" statement_of_purpose" placeholder= "Enter text" class="form-control"></textarea>
+</div>
+
+
+
+<form id="signup">
+    <h2>SignUP</h2>
+    <div class="form-group">
+        <label for="username1">Username</label>
+        <input id= "username1" type="text" placeholder="Enter username"/>
+    </div>
+
+    <div class="form-group">
+    <label for="email1">Email</label> Address:</label>
+    <input id="email1" type="email" placeholder="Enter email"/> 
+    </div>
+
+
+    <div class="form-group">
+    <label for="password1">Password:</labelPasswords:</label>   
+    <input id="password1" type="password" placeholder="Enter password"/>
+
+    </div>
+
+    <div class="form-group">
+        <input type ="submit" class="button" value= "Register!!!!" />
+        
+    </div>
+
+    <div class="form-group">
+        <input type ="reset" class="button" value= "start over!!!!" />
+        
+    </div>
+</form>
+</body>
+</html>
