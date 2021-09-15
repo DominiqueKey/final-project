@@ -25,9 +25,6 @@
           font-family: 'Great Vibes', cursive;
         }
         body {
-          
-
-        
           background-color: #7BAFD4;
         }
 
@@ -35,7 +32,7 @@
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: auto;
-          background-color: #2196F3;
+          background-color: #8D9092;
           padding: 10px;
           grid-column-gap: 0px;
         }
@@ -205,14 +202,14 @@
         .sticky + .content {
           padding-top: 60px;
         }
-        #contactform {
+        section {
           grid-column: 3 / 3;
           grid-row: 2 / 3;
           padding-right: 187px;
         }
 
         .vl {
-          border-left: 6px solid green;
+          border-left: 6px solid #13294B;;
           height: 715px;
           grid-column: 2 / 4;
           grid-row: 1 / 5; 
@@ -283,15 +280,15 @@
 
         <input type="button" value="Donate Here" id= "btn-donate">
        
-      </div>
+    </div>
 
-      <div id="navbar">
+    <div id="navbar">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="donate.html">Donate</a>
         <a class="contact" href="contact.html">Contact</a>
         
-      </div>
+    </div>
 
     <div class="grid-container">
       <div id="address">
@@ -325,7 +322,7 @@
 
       <div class="vl"></div>
 
-      <div id=contactform>
+      <section>
         <form id= "contactform" action = "#">
           <label for="name" id="name"></label>
           <input type="text" id="name" placeholder ="Name*" size="47"/>
@@ -343,10 +340,11 @@
           <textarea id="message" placeholder ="Message*" rows="27" cols ="40"></textarea>
         </form>
 
-      </div>
+      </section>
       
     </div>
-    <footer class="footer">
+    
+      <footer class="footer">
       <div>
         <p id ="footer-paragraph"> © 2021 by Benevolent Community Center * (404) 731-6573 * 
           96 Despard Street Wimauma, Fl 33598
@@ -363,7 +361,7 @@
         <a href="#" class="fa fa-twitter"></a>
   
       </div>
-    </footer>
+      </footer>
 
     <script>
         window.onscroll = function() {myFunction()};
